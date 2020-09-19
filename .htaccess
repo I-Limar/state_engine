@@ -1,0 +1,20 @@
+RewriteEngine On 
+#Позволяет включить или выключить работу 
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* index.php?qwertyqwerty=$0 [QSA]
+#запрещаем гулять по папкам проекта
+Options -Indexes 
+#запрещаем дуступ к файлам через адресную строку 
+<FilesMatch "\.(php|txt)$"> 
+    Deny from all
+</FilesMatch>
+
+#Разрещаем один вход через index
+<FilesMatch "^index.(php)$">  
+    Allow from all
+</FilesMatch>
+#Можно задать кодировку по умолчанию
+#Вулючить или выключить показаз ошибки 
+#Можно сделать красивую 403 страницу
