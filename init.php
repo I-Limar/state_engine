@@ -12,7 +12,7 @@ addVisitLog();
 include_once('core/system.php');	
 
 const BASE_URL = '/dz4/';
-
+const HOST = 'http://localhost';
 const DB_HOST = 'localhost';
 const DB_NAME = 'blog';
 const DB_USER= 'root';

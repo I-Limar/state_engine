@@ -39,7 +39,7 @@
 		<ul>
 			<? foreach($visitsDays as $day): ?>
 			<li>
-				<a href="index.php?c=logs&dt=<?=$day?>"><?=$day?></a>
+				<a href="<?=BASE_URL?>logs/<?=$day?>"><?=$day?></a>
 			</li>
 			<? endforeach; ?>
 		</ul>

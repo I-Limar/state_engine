@@ -4,7 +4,7 @@
 		<p> <?=$cat['title']?>
 			<div><?=$article['content']?></div>
 			<hr>
-			<a href="index.php?c=delete&id=<?=$id?>">Remove</a> | 
-			<a href="index.php?c=edit&id=<?=$id?>">Edit</a>
+			<a href="<?=BASE_URL?>delete/<?=$id?>">Remove</a> | 
+			<a href="<?=BASE_URL?>edit/<?=$id?>">Edit</a>
 	</div>
 </div>

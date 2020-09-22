@@ -11,11 +11,11 @@
 		<div >
 			<h2><?=$article['title']?></h2>
 			<p><?=$article['dt_add']?></p>
-			<p><a href="index.php?cat=<?=$urlCat?>">
+			<p><a href="<?=BASE_URL?><?=$urlCat?>">
 			<?=$titleCat?>
             </a>
 			</p>
-			<a href="index.php?c=article&id=<?=$article['id_article']?>">
+			<a href="<?=BASE_URL?>article/<?=$article['id_article']?>">
             Read more
             </a>
             <hr>

@@ -1,5 +1,5 @@
 <?php
-	$id  = (int)$_GET['id'] ?? '';
+	$id  = URL_PARMAS[1] ?? '';
 	$article = getArticle($id);
 	$cats = catsAll();
 	$OneCat = getCatById($id);

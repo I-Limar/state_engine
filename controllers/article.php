@@ -1,5 +1,5 @@
 <?php
-	$id  = (int)$_GET['id'] ?? '';
+	$id  =  (int)URL_PARAMS['id'];
 	$article = getArticle($id);
 	$cat = getCatById ($id);
 	$hasPost = $article !== [];

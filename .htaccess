@@ -3,7 +3,7 @@ RewriteEngine On
 
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule .* index.php?qwertyqwerty=$0 [QSA]
+RewriteRule .* index.php?qwertyqwerty=$0
 #запрещаем гулять по папкам проекта
 Options -Indexes 
 #запрещаем дуступ к файлам через адресную строку 

@@ -1,7 +1,7 @@
 <?php
 
 $cats = catsAll ();
-$url = $_GET['cat'] ?? '';
+$url =  '';
 
 if ($url) {
 	$articles = getArticleByCat($url);
