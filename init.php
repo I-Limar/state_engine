@@ -6,6 +6,7 @@ include_once('model/visits.php');
 include_once('model/articles.php');
 include_once('core/arr.php');
 include_once('model/cats.php');
+include_once('model/users.php');
 if (isset($_GET['c'])!=='logs'){
 addVisitLog();
 }

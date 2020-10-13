@@ -23,5 +23,9 @@ return [
         'controller' => 'article',
         'params' => ['id' => 1]
     ],
+    [
+        'test' => "/^login\/?$/",
+        'controller' => 'auth/login'
+    ],
 ];
 })();

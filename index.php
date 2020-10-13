@@ -9,7 +9,7 @@ if(strpos($uri, $badUrl)=== 0){
 
 $routes = include('routes.php');
 $url = $_GET['qwertyqwerty'] ?? '';
-var_dump($_GET);
+//var_dump($_GET);
 $routerRes = parseUrl($url, $routes);
 $cname = $routerRes['controller'];
 define('URL_PARAMS', $routerRes['params']);

@@ -20,12 +20,7 @@
 		if ($arr) {
 			return $arr; 
 		}
-		else {return $arr=[];}		$query = dbQuery($sql, ['id'=>$id]);
-		$arr = $query->fetch();
-		if ($arr) {
-			return $arr; 
-		}
-		else {return $arr=[];}	
+		else {return $arr=[];}
 	}
 	function removeArticle (int $id): bool {
 		$sql = "DELETE FROM article WHERE id_article = :id";
